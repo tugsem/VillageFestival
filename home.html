@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillageFest</title>
+    <script src="https://kit.fontawesome.com/b7309bd951.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section id="nav-menu">
+        <div id="cancel">&times</div>
+        <ul class="nav-menu-items">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#join">Join</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+    </section>
+    <header>
+        <span id="hamBtn" class="material-icons">menu</span>
+        <section class="desktop-menu">
+            <a href="#home" id="logo"><i class="fa-solid fa-umbrella-beach">ADRASAN<br>VillageFest</i></a>
+            <div class="desktop-nav-menu">
+                <ul class="desktop-menu-items">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#join">Join</a></li>
+                    <li><a href="#join">Sponsor</a></li>
+                    <li><a href="#news">News</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main id="home">
+        <div class="main-container">
+            <h1 id="mainTitle">ADRASAN VILLAGE FESTIVAL 2022</h1>
+            <p id="mainDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti obcaecati, dolorem velit, eius atque excepturi explicabo illo fugiat autem soluta cupiditate enim quaerat quibusdam aliquam officia vero amet odit?
+            </p>
+            <h2 id="date">2022.06.12(SUN) ~ 19(SUN)</h2>
+            <p id="location"><b>@ Adrasan Village, Antalya</b></p>
+        </div>
+    </main>
+    <section id="program">
+        <h3 class="sectionTitle">Main Program</h3>
+        <div id="redline"></div>
+        <div class="pr-container">
+            <div class="activity">
+                <i class="fa-solid fa-palette" style="font-size: 1.5rem;"></i>
+                <h4 class="activityTitle">Workshops</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-image" style="font-size: 1.5rem;"></i>
+                <h4 class="activityTitle">Exhibitions</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-guitar" style="font-size: 1.5rem;"></i>
+                <h4 class="activityTitle">Concerts</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-globe" style="font-size: 1.5rem;"></i>
+                <h4 class="activityTitle">Seminars</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-tree" style="font-size: 1.5rem;"></i>
+                <h4 class="activityTitle">Nature activities</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <button id="redBtn">Book a place</button>
+            
+        </div>
+        <a id="hidden-nav" href="#">SEE THE WHOLE PROGRAM</a>
+    </section>
+    <section id="artists">
+        <h3 class="sectionTitle" style="font-weight: 700;">Featured Artists</h3>
+        <div id="redline"></div>
+        <ul id="artistList">
+        </ul>
+        <button id="seeMore">
+            <p>MORE</p>
+            <i class="fa-solid fa-angle-down" style="color: #ec5242;"></i>
+        </button>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: #5f5f5f;
+    background-color: #F7F7F7;
+}
+
+header {
+    position: fixed;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#hamBtn {
+    font-size: 2rem;
+}
+#hamBtn.active {
+    display: none;
+}
+main,
+#about {
+    background-image: url('./assets/header.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    padding: 100px 0;
+}
+
+#mainDesc {
+    background-color: #ffffffc9;
+    border: 3px solid #fff;
+    padding: 15px;
+    margin: 20px;
+    
+}
+#mainTitle {
+    background-image: url(./assets/text-bg.png);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, .2);
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 0 20px;
+}
+
+#date {
+    font-weight: 900;
+    padding: 10px 20px;
+}
+
+#location {
+    padding: 0 20px;
+}
+
+#program {
+    background-image: url(./assets/graybg.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 30px 10%;
+}
+
+.sectionTitle {
+    text-align: center;
+    font-weight: 400;
+}
+#redline{
+    border-bottom:1px solid #ec5242;
+    width: 40px;
+    margin: 10px auto;
+}
+.pr-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.activity {
+    display: flex;
+    column-gap: 20px;
+    background-color: rgba(104, 103, 103, 0.26);
+    padding: 20px;
+    align-items: center;
+}
+
+.activityTitle {
+    color: #ec5242;
+    font-weight: 900;
+}
+
+#about {
+    text-align: center;
+    padding: 100px 20px;
+    color: #666;
+    height: 70vh;
+}
+
+#aboutDesc {
+    margin: 30px 0 20px;
+    background-color: #fff;
+    border: 2px solid #ECECEC;
+    padding: 20px 10px;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #ec5242;
+    position: fixed;
+    min-height: 100vh;
+    width: 50%;
+}
+
+#cancel {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-menu-items > li  {
+    list-style-type: none;
+    padding: 20px;
+}
+.nav-menu-items > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+#redBtn {
+    background-color: #ec5242;
+    color: #fff;
+    font-weight: 700;
+    font-size: large;
+    padding: 25px;
+    border: none;
+    margin: 20px 35px 0px;
+}
+
+#artists {
+    min-height: 70vh;
+    background-color: #fff;
+    color: #272a31;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+#artistList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    padding-top: 20px;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.artist-img {
+    width: 130px;
+    height: 130px;
+}
+#seeMore {
+    padding: 15px;
+    margin: 0 10px;
+    background-color: #fff;
+    border: 1px solid #5f5f5f;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-weight: 700;
+    color: #555555;
+}
+
+.side-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.job-title { 
+    color: #ec5242;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+#logo-section {
+    background-color: #fff;
+    color: #272a31;
+    text-align: center;
+    padding: 40px 10px;
+    border-bottom: 1px solid #969696;
+}
+
+#logoContainer {
+    margin: 30px 20px;
+    border: 1px solid #969696;
+    padding: 30px 50px;
+}
+
+#pastFestivals {
+    text-align: center;
+    padding: 40px 0;
+    color: #272a31;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+#past-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#year20 {
+    background-image: url('./assets/2020.jpg');
+    margin: 20px auto;
+    padding: 20% 30%;
+    color: #fff;
+    font-size: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#year21 {
+    background-image: url('./assets/2021.jpg');
+    color: #fff;
+    background-size: cover;
+    padding: 20% 30%;
+    font-size: 1.5rem;
+    background-repeat: no-repeat;
+}
+#partners {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding: 30px;
+    background-color: #414246;
+}
+
+#partnerTitle {
+    color: #969696;
+    font-weight: 300;
+}
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    padding: 20px;
+    background-color: #fff;
+}
+#logo {
+    display: none;
+    font-weight: 900;
+    color: #ec5242;
+    font-size: larger;
+}
+
+#footer > a#logo {
+    display: contents;
+    color: #272a31;
+    font-size: small;
+}
+
+#copyRight {
+    font-size: 0.7rem;
+}
+
+#hidden-nav {
+    display: none;
+}
+
+
+#aboutTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: #ec5242;
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+    }
+    main {
+        height: 100vh;
+        padding: 100px 200px;
+    }
+    #mainTitle {
+        font-size: 4rem;
+        width: 600px;
+    }
+
+    #aboutTitle {
+        font-size: 3rem;
+    }
+    #mainDesc {
+        width: 50vw;
+    }
+    #hamBtn {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .desktop-menu-items > li > a {
+        text-decoration: none;
+        color: #272a31;
+    }
+
+    #logo {
+        display: contents;
+    }
+
+    .desktop-menu-items {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+    }
+    .desktop-menu-items > li >a:hover {
+        color: #ec5242;
+    }
+    .pr-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    .sectionTitle {
+        margin-top: 20px;
+    }
+    #hidden-nav {
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        margin: 50px 0;
+        word-spacing: 2px;
+        font-size: small;
+    }
+    #hidden-nav:hover {
+        color: #ec5242;
+    }
+    .activity {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        padding-bottom: 30px;
+        gap: 10px;
+        text-align: center;
+    }
+    .activity:hover {
+        border: 2px solid #fff;
+    }
+    #redBtn {
+        display: none;
+    }
+    #artistList {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 20px auto;
+        grid-gap: 0 40px;
+    }
+    #seeMore {
+        display: none;
+    }
+
+    #about {
+        margin: 0px auto;
+        padding: 150px;
+    }
+
+    #aboutDesc{
+        margin: 30px 0;
+    }
+    #about > div#redline {
+        width: 30px;
+    }
+    #past-works {
+        display: flex;
+        flex-direction: row;
+        gap: 30px 20px;
+        margin: 0 30%;
+    }
+    #year20:hover,
+    #year21:hover {
+        transition: all 1s;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    #footer {
+        background-color: #272a31;
+        color: #fff;
+        padding: 50px;
+    }
+
+    #footer > a#logo {
+        color: #fff;
+    }
+    #logoContainer {
+        margin: 30px 30%;
+        font-size: 2rem;
+    }
+
+}
