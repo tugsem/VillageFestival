@@ -12,6 +12,40 @@ body {
   background-color: #f7f7f7;
 }
 
+#partner-logos {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+#partner-logos > li > img {
+  color: #fff;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-position: center;
+}
+#top-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #272a31;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: small;
+}
+#top-nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px 15px;
+  list-style-type: none;
+}
+#top-nav > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  
+}
 header {
   position: fixed;
   padding: 10px 20px;
@@ -25,6 +59,7 @@ header {
 
 #hamBtn {
   font-size: 2rem;
+  padding-top: 40px;
 }
 
 #hamBtn.active {
@@ -39,7 +74,7 @@ main,
 }
 
 .main-container {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 #mainDesc {
@@ -136,6 +171,7 @@ main,
   min-height: 100vh;
   width: 50%;
   top: 0;
+  left: 0;
 }
 
 #cancel {
@@ -355,10 +391,14 @@ main,
   .desktop-menu {
     display: flex;
     width: 100%;
+    padding-top: 35px;
     align-items: center;
     justify-content: space-around;
   }
 
+  #top-nav {
+    padding-right: 15%;
+  }
   .desktop-menu-items > li > a {
     text-decoration: none;
     color: #272a31;
