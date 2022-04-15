@@ -17,7 +17,7 @@
 
 ## Video Link 
 
-[Loom]([https://www.loom.com/share/ba730c5624894c28a927cd9e06b8cb58])
+https://www.loom.com/share/ba730c5624894c28a927cd9e06b8cb58
 
 ## Getting Started
 
