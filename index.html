@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillageFest</title>
+    <script src="https://kit.fontawesome.com/b7309bd951.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="top-nav">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">My Page</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </section>
+        <section id="nav-menu">
+            <div id="cancel">&times;</div>
+            <ul class="nav-menu-items">
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </section>
+        <span id="hamBtn" class="material-icons">menu</span>
+        <section class="desktop-menu">
+            <a href="#home" class="logo"><i class="fa-solid fa-umbrella-beach">ADRASAN<br>VillageFest</i></a>
+            <nav class="desktop-nav-menu">
+                <ul class="desktop-menu-items">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#join">Join</a></li>
+                    <li><a href="#partner">Sponsor</a></li>
+                    <li><a href="#news">News</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main id="home">
+        <div class="main-container">
+            <h1 id="mainTitle">ADRASAN VILLAGE FESTIVAL 2022</h1>
+            <p id="mainDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, corrupti obcaecati, dolorem velit, eius atque excepturi explicabo illo fugiat autem soluta cupiditate enim quaerat quibusdam aliquam officia vero amet odit?
+            </p>
+            <h2 id="date">2022.06.12(SUN) ~ 19(SUN)</h2>
+            <p id="location"><b>@ Adrasan Village, Antalya</b></p>
+        </div>
+    </main>
+    <section id="program">
+        <h3 class="sectionTitle">Main Program</h3>
+        <div class="redline"></div>
+        <div class="pr-container">
+            <div class="activity">
+                <i class="fa-solid fa-palette icons"></i>
+                <h4 class="activityTitle">Workshops</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-image icons"></i>
+                <h4 class="activityTitle">Exhibitions</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-guitar icons"></i>
+                <h4 class="activityTitle">Concerts</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-globe icons"></i>
+                <h4 class="activityTitle">Seminars</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="activity">
+                <i class="fa-solid fa-tree icons"></i>
+                <h4 class="activityTitle">Nature activities</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <button id="redBtn" type="button">Book a place</button>
+            
+        </div>
+        <a id="hidden-nav" href="#">SEE THE WHOLE PROGRAM</a>
+    </section>
+    <section id="artists">
+        <h3 class="sectionTitle">Featured Artists</h3>
+        <div class="redline"></div>
+        <ul id="artistList">
+        </ul>
+        <button id="seeMore" type="button">MORE
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+    </section>
+    <section id="partners">
+        <h2 id="partnerTitle">Partner</h2>
+        <div class="redline"></div>
+        <ul id="partner-logos">
+            <li><img src="./assets/gopro.png" alt="goprologo" width="150" height="150"></li>
+            <li><img src="./assets/vans.png" alt="vanslogo" width="150" height="150"></li>
+            <li><img src="./assets/starbucks.png" alt="starbucks" width="150" height="150"></li>
+        </ul>
+    </section>
+    <footer id="home-footer">
+        <a href="./index.html" class="logo"><i class="fa-solid fa-umbrella-beach">ADRASAN<br>VillageFest</i></a>
+        <p id="copyRight">Original design idea by Cindy Chin in Behance.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
