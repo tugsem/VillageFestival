@@ -326,6 +326,14 @@ main,
   font-weight: 300;
 }
 
+#home-footer {
+  color: #272a31;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
 #footer {
   width: 100%;
   display: flex;
@@ -343,6 +351,7 @@ main,
   font-size: larger;
 }
 
+#home-footer > a.logo,
 #footer > a.logo {
   display: contents;
   color: #272a31;
