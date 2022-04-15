@@ -2,6 +2,7 @@ const hamBtn = document.querySelector('#hamBtn');
 const navMenu = document.querySelector('#nav-menu');
 const cancelMenu = document.querySelector('#cancel');
 const artistList = document.querySelector('#artistList');
+const navMenuItems = document.querySelectorAll('.nav-menu-items');
 
 hamBtn.addEventListener('click', () => {
   navMenu.classList.add('active');
@@ -13,42 +14,49 @@ cancelMenu.addEventListener('click', () => {
   hamBtn.classList.remove('active');
 });
 
+navMenuItems.forEach(item => {
+  item.onclick = () => {
+    navMenu.classList.remove('active');
+    hamBtn.classList.remove('active');
+  }
+})
+
 const artists = [
   {
     img: './assets/thumbpic1.jpg',
-    artistName: 'Lorem Ipsum',
-    expertise: 'Lorem Ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    artistName: 'Selin Semerci',
+    expertise: 'Turkish singer',
+    description: 'The first Turkish Grammy awarded jazz singer.',
   },
   {
     img: './assets/thumbpic2.jpg',
-    artistName: 'Lorem Ipsum',
-    expertise: 'Lorem Ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    artistName: 'Çağla Akışkan',
+    expertise: 'Photographer',
+    description: 'Wildlife photographer of the last year.',
   },
   {
     img: './assets/thumbpic3.jpg',
-    artistName: 'Lorem Ipsum',
-    expertise: 'Lorem Ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    artistName: 'Timuçin Esen',
+    expertise: 'Mural Painter',
+    description: 'International artist who likes to travel the world.',
   },
   {
     img: './assets/thumbpic4.jpg',
-    artistName: 'Lorem Ipsum',
-    expertise: 'Lorem Ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    artistName: 'Gülin Ayla',
+    expertise: ' Turkish Singer',
+    description: 'The singer on the top of the Turkish hit music lists.',
   },
   {
     img: './assets/thumbpic5.jpg',
-    artistName: 'Lorem Ipsum',
-    expertise: 'Lorem Ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    artistName: 'Chris Clockwork',
+    expertise: 'Dj',
+    description: 'Worldwide known electronic musician',
   },
   {
     img: './assets/thumbpic6.jpg',
-    artistName: 'Lorem Ipsum',
-    expertise: 'Lorem Ipsum dolor sit amet',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    artistName: 'Anya Falfe',
+    expertise: 'Founder and volunteer of Global Care Organization',
+    description: 'She gave seminars about global warming across 30 country.',
   },
 ];
 
