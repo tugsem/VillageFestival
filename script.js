@@ -14,12 +14,12 @@ cancelMenu.addEventListener('click', () => {
   hamBtn.classList.remove('active');
 });
 
-navMenuItems.forEach(item => {
+navMenuItems.forEach((item) => {
   item.onclick = () => {
     navMenu.classList.remove('active');
     hamBtn.classList.remove('active');
-  }
-})
+  };
+});
 
 const artists = [
   {

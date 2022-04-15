@@ -18,6 +18,7 @@ body {
   list-style-type: none;
   flex-wrap: wrap;
 }
+
 #partner-logos > li > img {
   color: #fff;
   padding: 10px;
@@ -25,6 +26,25 @@ body {
   height: 100px;
   background-position: center;
 }
+
+header {
+  position: fixed;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav-menu-items > li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav-menu-items > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
 #top-nav {
   position: absolute;
   top: 0;
@@ -34,6 +54,7 @@ body {
   padding: 10px 20px;
   font-size: small;
 }
+
 #top-nav > ul {
   display: flex;
   justify-content: flex-end;
@@ -41,16 +62,10 @@ body {
   gap: 10px 15px;
   list-style-type: none;
 }
+
 #top-nav > ul > li > a {
   color: #fff;
   text-decoration: none;
-  
-}
-header {
-  position: fixed;
-  padding: 10px 20px;
-  width: 100%;
-  background-color: #fff;
 }
 
 .icons {
@@ -180,17 +195,6 @@ main,
   padding: 10px;
   display: flex;
   justify-content: flex-end;
-}
-
-.nav-menu-items > li {
-  list-style-type: none;
-  padding: 20px;
-}
-
-.nav-menu-items > li > a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.3rem;
 }
 
 #redBtn {
@@ -399,6 +403,7 @@ main,
   #top-nav {
     padding-right: 15%;
   }
+
   .desktop-menu-items > li > a {
     text-decoration: none;
     color: #272a31;
